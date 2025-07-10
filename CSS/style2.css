@@ -1,0 +1,14 @@
+/* element selector*/
+div{
+    background-color: aqua;
+}
+
+/* dot(.) for class attribute */
+.box {
+    background-color: yellow;
+}
+
+/* has(#) for id attribute */
+#intro {
+    background-color: yellowgreen;
+}
