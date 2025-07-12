@@ -1,14 +1,110 @@
-/* element selector*/
-div{
+ /* element selector */
+/* div{
     background-color: aqua;
-}
+} */
 
 /* dot(.) for class attribute */
-.box {
+/* .box {
     background-color: yellow;
-}
+} */
 
 /* has(#) for id attribute */
-#intro {
+/* #intro {
     background-color: yellowgreen;
-}
+}  */
+
+/* universal selector */
+* {
+    font-family: sans-serif;
+ }
+
+ /* element selector */
+ h1{
+    color: blue;
+ }
+
+ p{
+    color: brown;
+ }
+
+ /* class selector */
+ .highlight{
+    background-color: yellow;
+ }
+
+ /* id selector */
+ #unique-box{
+    border: 2px solid blue;
+ }
+
+ /* Group selector */
+ h1, .highlight, #unique-box{
+    font-style: italic;
+    font-size: 32px;
+ }
+
+
+
+ /* Descendant selector */
+ .nested p{
+    color: red;
+ }
+
+ /* Child selector */
+ .nested > p{
+    color: green;
+ }
+
+ .nested > div > p{
+    color: cyan;
+ }
+
+ /* Adjacent Sibling Selector */
+ h3 + p{
+    color: rebeccapurple;
+ }
+
+ /* general sibling selector */
+ h3 ~ p{
+    color: violet;
+ }
+
+ /* Attribute slector */
+ input[type="text"] {
+    border: 2px solid purple;
+ }
+
+
+ .hover-button:hover {
+    background-color: lightpink;
+ }
+
+ /* pseudo classes */
+ li:first-child{
+   color: darkgreen;
+ }
+
+ li:last-child{
+   color: darkred
+ }
+
+ li:nth-child(2){
+   color: darkblue;
+ }
+
+ /* pseudo elements */
+ .pseudo::before{
+   content: '##';
+ }
+
+ .pseudo::after{
+   content: "##";
+ }
+
+ .pseudo::first-line{
+   color: navy;
+ }
+
+ .pseudo::first-letter{
+   text-decoration: underline 2px wavy;
+ }
