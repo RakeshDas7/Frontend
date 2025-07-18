@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+p {
+    background-color: chartreuse;
+    width: 500px;
+    width: 50%;
+    height: 50%;
+
+    padding: 10%;
+    /*it relates to the parent element and it calculated by the width of the parent element */
+
+    margin: 10%;
+    /* border: black solid 10px; */
+
+    font-size: 200%;
+    /* by default font size always 16px so that the fontsize of 200% is 32px and it is also calculated by parent element */
+}
+
+div{
+    /* width: 400px; */
+    width: 50%;
+    height: 400px; /* this is the parent of p tag so that it defines the height of the child tag p */
+    /* height: 50%; */
+
+    font-size: 30px;
+
+    /* view poret, height */
+    width: 50vw;
+
+    height: 50vh;
+
+    padding: 10vw;
+
+    border: 1vh solid red;
+
+    font-size: 3vh;
+}
+
