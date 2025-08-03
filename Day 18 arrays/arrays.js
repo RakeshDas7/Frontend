@@ -157,7 +157,6 @@ const months = ["January", "Frebruary", "March", "April", "May"];
 // console.log(oddNumber)
 
 const nums = [10, 20, 30, 40, 50, 60, 70]
-let a
 const result = nums.reduce((accumulator, current, idx, arr) => {
     console.log(accumulator, current, idx)
     // return true
