@@ -13,12 +13,24 @@
 </head>
 <body>
     <form action="/form-submit">
-        <input type="text" placeholder="enter username">
+        <input type="text" placeholder="enter username" name="username"> <!--to track the value of this input we usename attribute-->
+        <br><br>
+        <!-- ================================== 14.08.2025 =================================== -->
+        <label>
+            Choose an ice cream flavor
+            <select class="ice-cream" name="flavor">
+                <option value="">Select One...</option>
+                <option value="butterscotch">Butter Scotch</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanila">Vanila</option>
+            </select>
+        </label>
+        <br><br>
         <button>Click</button>
     </form>
 
     <script>
-        const form = document.querySelector('form');
+        // const form = document.querySelector('form');
         // form.addEventListener('submit', (e) => {
         //     e.preventDefault()
 
@@ -38,6 +50,28 @@
         })
         input.addEventListener('blur', () => {
             console.log("Focus removed from  input field")
+        })
+        input.addEventListener('input', (e) => {
+            // console.log('change event occured in the input ')
+            console.log(e.target.value)
+        }) // 14.08.25
+        //================================== 14.08.2025 ===================================
+        const selectElement = document.querySelector('.ice-cream')
+        selectElement.addEventListener('change', (e) => {
+            console.log('change event occured')
+            // console.log(e)
+            console.log(e.target.value)
+        })
+
+        const form = document.querySelector('form')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const formData = new FormData(form)
+            console.log('formdata', formData)
+
+            for (const [key, value] of formData.entries()) {
+                console.log(`${key} : ${value}`)
+            }
         })
     </script>
 </body>
