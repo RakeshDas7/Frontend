@@ -1,32 +1,32 @@
-// debugger
-console.log("program started")
+// // debugger
+// console.log("program started")
 
-// function declaraion
-//syntax => function <function_name> (list of parameters)
-function hello() {
-    console.log("Hello Everyone")
-}
+// // function declaraion
+// //syntax => function <function_name> (list of parameters)
+// function hello() {
+//     console.log("Hello Everyone")
+// }
 
-// calling the function
-hello()
+// // calling the function
+// hello()
 
-function add() {
-    const x = 10;
-    const y = 20;
-    console.log("sum is = " + (x + y))
-}
-add()
-//=============================================>
+// function add() {
+//     const x = 10;
+//     const y = 20;
+//     console.log("sum is = " + (x + y))
+// }
+// add()
+// //=============================================>
 
-//Default parameter
-function addTwoNumbers(x, y = 100) { // y is assigned with default number as 100 if we call the function and only put one number that assigned with x the y will use as default number 100
-    console.log("x value is ", x)
-    console.log("y value is ", y)
-    console.log("Addition is ", x + y)    
-}
-addTwoNumbers(50, 69)
+// //Default parameter
+// function addTwoNumbers(x, y = 100) { // y is assigned with default number as 100 if we call the function and only put one number that assigned with x the y will use as default number 100
+//     console.log("x value is ", x)
+//     console.log("y value is ", y)
+//     console.log("Addition is ", x + y)    
+// }
+// addTwoNumbers(50, 69)
 
-console.log("Program ended")
+// console.log("Program ended")
 
 //=============================================>
 
