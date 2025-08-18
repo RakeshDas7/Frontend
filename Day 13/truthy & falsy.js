@@ -41,3 +41,7 @@ if (NaN) {
 }else {
     console.log("It is a falsy value") // output
 }
+
+let s = BigInt(123)
+console.log(s) // output: 123
+console.log(typeof s)
