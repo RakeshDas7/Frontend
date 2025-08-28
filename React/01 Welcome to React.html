@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .heading {
+            color: green;
+        }
+    </style>
+</head>
+
+<body style="font-family: cursive;">
+    <h1>React Fundamental</h1>
+
+    <div id="root">
+        Hiiiiiiiiiiiiii
+    </div>
+
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        // //Object -> React Element -> React.createElement(type, attributes, chidren)
+        // const h1 = React.createElement('h1', {}, 'Welcome to the world of React')
+        // console.log(h1)
+
+        // //createRoot() creates a starting position from where out React element get rendered in the web page
+        // const root = ReactDOM.createRoot(document.getElementById('root'))
+        // console.log(root)
+
+        // //render() render the React element in the web page
+        // root.render(h1) // -> Render method requires a React Element
+
+        // const h2 = React.createElement('h2', {}, 'Again come to React')
+        // console.log(h2)
+        // const h2Clone = {
+        //     "type": "h2",
+        //     "key": null,
+        //     "ref": null,
+        //     "props": {
+        //         "children": "Again come to React"
+        //     },
+        //     // "_owner": null,
+        //     // "_store": {}, // we can avoid this
+        //     "$$typeof": Symbol.for('react.element')
+        // }
+        // const r1 = ReactDOM.createRoot(document.getElementById('root1'))
+        // r1.render(h2Clone)
+
+        // ========================================================================================
+
+        const h1 = React.createElement("h1",
+            { className: 'heading', 
+                style: {
+                    backgroundColor: 'cyan',
+                    padding: "30px",
+                    borderRadius: '5px'
+                } 
+            },
+            // [
+                "Starting with react",
+            //     React.createElement(
+            //         "p",
+            //         {
+            //             id: '2' 
+            //         },
+            //         "Random Paragraph"
+            //     )
+            // ]
+        )
+        const h2 = React.createElement("h2",
+            { className: 'heading', 
+                style: {
+                    backgroundColor: 'cyan',
+                    padding: "30px",
+                    borderRadius: '5px'
+                } 
+            },
+            "Starting with react2",
+        )
+        const h3 = React.createElement("h3",
+            { className: 'heading', 
+                style: {
+                    backgroundColor: 'cyan',
+                    padding: "30px",
+                    borderRadius: '5px'
+                } 
+            },
+            "Starting with react3",
+        )
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'))
+        root.render([h1, h2, h3])
+        
+        // const h2 = React.createElement("h1", { className: 'heading' }, "JT" )
+        // const root1 = ReactDOM.createRoot(document.getElementById('root1'))
+        // root1.render(h2)
+
+        // const h3 = React.createElement("h1", { className: 'heading' }, "Java From Space" )
+        // const root2 = ReactDOM.createRoot(document.getElementById('root2'))
+        // root2.render(h3)
+    </script>
+</body>
+
+</html>
