@@ -12,7 +12,12 @@ function App() {
       <div style={{padding: '20px'}}>
           <h1>React Props v/s States</h1>
 
-          <Greeting name={name} />
+          {/* <Greeting name={name} /> */}
+
+          <Greeting name={name}>
+            <p>This is extra elemnt passed as <strong>children</strong></p>
+            We can pass more elements text components etc...
+          </Greeting>
 
           <button style={{padding: '20px', margin: '20px'}} onClick={() => { setName((prev) => prev + 1)}}>Click Me</button>
       </div>
