@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Greeting from "./Greeting";
 
@@ -15,7 +13,7 @@ function App() {
     <div style={{ padding: "20px" }}>
       <h1>React Props v/s States</h1>
 
-      <button onClick={() => setShowGreeting(!showgreeting)}>
+      <button className="button" onClick={() => setShowGreeting(!showgreeting)}>
         {showgreeting === true ? "Hide" : "Show"}
       </button>
 
